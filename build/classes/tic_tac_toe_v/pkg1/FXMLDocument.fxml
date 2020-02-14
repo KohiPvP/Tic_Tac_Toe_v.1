@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1268.0" prefWidth="2212.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tic_tac_toe_v.pkg1.FXMLDocumentController">
+   <children>
+      <Pane id="pane_menu" fx:id="pane_menu" prefHeight="1268.0" prefWidth="2212.0">
+         <children>
+            <ImageView id="menu_wallpaper_1" fx:id="menu_wallpaper_1" fitHeight="636.0" fitWidth="622.0" layoutX="-6.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="menu_wallpaper_2" fx:id="menu_wallpaper_2" fitHeight="636.0" fitWidth="622.0" layoutX="599.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="menu_wallpaper_4" fx:id="menu_wallpaper_4" fitHeight="636.0" fitWidth="585.0" layoutX="1812.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="menu_wallpaper_3" fx:id="menu_wallpaper_3" fitHeight="636.0" fitWidth="622.0" layoutX="1207.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="menu_wallpaper_8" fx:id="menu_wallpaper_8" fitHeight="660.0" fitWidth="585.0" layoutX="1814.0" layoutY="627.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="menu_wallpaper_7" fx:id="menu_wallpaper_7" fitHeight="654.0" fitWidth="622.0" layoutX="601.0" layoutY="627.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <ImageView id="menu_wallpaper_5" fx:id="menu_wallpaper_6" fitHeight="660.0" fitWidth="622.0" layoutX="-4.0" layoutY="627.0" pickOnBounds="true" />
+            <ImageView id="menu_wallpaper_5" fx:id="menu_wallpaper_5" fitHeight="654.0" fitWidth="622.0" layoutX="1207.0" layoutY="632.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../../Asztali%20gép/Tic%20Tac%20Toe%20sources/tic-tac-toe-xo-game-seamless-pattern-black-board-vector-6779061.jpg" />
+               </image>
+            </ImageView>
+            <Button id="btn_exit" fx:id="btn_exit" layoutX="828.0" layoutY="689.0" mnemonicParsing="false" onAction="#buttonExit" prefHeight="125.0" prefWidth="556.0" text="Kilépés">
+               <font>
+                  <Font name="System Italic" size="62.0" />
+               </font>
+            </Button>
+            <Button id="btn_start" fx:id="btn_start" layoutX="828.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="125.0" prefWidth="556.0" text="Start">
+               <font>
+                  <Font name="System Italic" size="62.0" />
+               </font>
+            </Button>
+            <Label layoutX="957.0" layoutY="153.0" text="Menü">
+               <font>
+                  <Font name="Bowlby One SC Regular" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="pane_game" fx:id="pane_game" prefHeight="1268.0" prefWidth="2212.0" style="-fx-background-color: #FFFFFF;" visible="false">
+         <children>
+            <HBox alignment="CENTER" layoutX="686.0" layoutY="229.0" prefHeight="250.0" prefWidth="752.0">
+               <children>
+                  <Button id="game_button_1" fx:id="game_button_1" mnemonicParsing="false" onAction="#onButton1" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+                  <Button id="game_button_2" fx:id="game_button_2" mnemonicParsing="false" onAction="#onButton2" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+                  <Button id="game_button_3" fx:id="game_button_3" mnemonicParsing="false" onAction="#onButton3" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="686.0" layoutY="479.0" prefHeight="250.0" prefWidth="752.0">
+               <children>
+                  <Button id="game_button_4" fx:id="game_button_4" mnemonicParsing="false" onAction="#onButton4" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+                  <Button id="game_button_5" fx:id="game_button_5" mnemonicParsing="false" onAction="#onButton5" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+                  <Button id="game_button_6" fx:id="game_button_6" mnemonicParsing="false" onAction="#onButton6" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="686.0" layoutY="728.0" prefHeight="251.0" prefWidth="752.0">
+               <children>
+                  <Button id="game_button_7" fx:id="game_button_7" mnemonicParsing="false" onAction="#onButton7" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+                  <Button id="game_button_8" fx:id="game_button_8" mnemonicParsing="false" onAction="#onButton8" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+                  <Button id="game_button_9" fx:id="game_button_9" mnemonicParsing="false" onAction="#onButton9" prefHeight="250.0" prefWidth="250.0" style="-fx-background-color: white; -fx-border-color:black; -fx-border-width: 10 10 10 10; -fx-background-insets: 0;">
+                     <font>
+                        <Font name="Bodoni MT" size="106.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Pane id="pane_winning" fx:id="pane_winning" prefHeight="1268.0" prefWidth="2212.0" visible="false">
+         <children>
+            <Label id="label_winningText" fx:id="label_winningText" alignment="CENTER" layoutX="597.0" layoutY="350.0" prefHeight="132.0" prefWidth="1019.0" text="Congratulations! You won...">
+               <font>
+                  <Font name="System Bold Italic" size="50.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" layoutX="761.0" layoutY="597.0" prefHeight="74.0" prefWidth="691.0" spacing="150.0">
+               <children>
+                  <Button id="btn_newGame" fx:id="btn_newGame" mnemonicParsing="false" onAction="#newGame" prefHeight="73.0" prefWidth="267.0" text="Új játék">
+                     <font>
+                        <Font name="Calibri Italic" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button id="btn_backToMenu" fx:id="btn_backToMenu" mnemonicParsing="false" onAction="#backToMenu" prefHeight="73.0" prefWidth="267.0" text="Vissza a főmenübe">
+                     <font>
+                        <Font name="Calibri Italic" size="30.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
